@@ -19,10 +19,6 @@ class Book(SQLModel, table=True):
 
     # системный статус (для soft delete)
     status: str = Field(default="active")   # active / deleted
-
-    # дополнительный статус (доступность)
-    availability_status: str = Field(default="available")
-    # available / lost / damaged
     
 
 
